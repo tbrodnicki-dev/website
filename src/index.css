@@ -22,6 +22,13 @@ a:hover {
   color: #535bf2;
 }
 
+body,html {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
 
 h1 {
   font-size: 2em;
@@ -44,26 +51,39 @@ h1 {
 }
 
 
-.main-content {
-  background-color: rgba(34, 34, 34, 0.7); /* 85% opacity background */
-  border-radius: 24px;
-  box-shadow: 0 8px 32px rgba(70, 70, 70, 0.25); /* Optional: add a soft shadow */
-  position: fixed;
-  width: 800px;
-  height: 400px;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
+.front-splash {
+  position: relative;
+
   color: #ffffff;
   padding-block: 20px;
-}
-
-.main-content h1 {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.main-content p {
-  text-align: left;
-  padding-left: 20px;
-  width: 50%;
+
+.front-splash h1 {
+  font-size: 5em;
+}
+
+.front-splash h2 {
+  font-size: 2.5em;
+}
+
+.experience{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience h1 {
+  font-size: 2.5em;
+
 }

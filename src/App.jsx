@@ -23,9 +23,12 @@ function App() {
         disableRotation={false}
       />
     </div>
-    <div className='main-content'>
-      <h1>Hi, my name is Tyler!</h1>
-      <p>I'm a Third-Year Computer Science student at the University of Florida! At my time at UF I've been apart of many organizations that have allowed me to freely practice my skills in Software Engineering!</p>
+    <div className='front-splash'>
+      <h1>Tyler Brodnicki</h1>
+      <h2>Software Engineering Student</h2>
+    </div>
+    <div className='experience'>
+        <h1>Experience</h1>
     </div>
     </>
   )
