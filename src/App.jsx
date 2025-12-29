@@ -5,6 +5,7 @@ import Lightbox  from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 import './index.css'
 import Particles from './Particles';
+
 import { Counter, Fullscreen, Inline, Share, Zoom } from 'yet-another-react-lightbox/plugins';
 
 function ParticlesShowcase() {
@@ -46,35 +47,45 @@ function App() {
     <>
     <ParticlesShowcase />
     <div className ='nav-bar'>
-      <h1>Tyler Brodnicki</h1>
-      <h2>Portfolio</h2>
+      <h1>Tyler</h1>
+      <h1>Brodnicki</h1>
+      <ul>
+        <li><u>Recent Work</u></li>
+        <li>Contact</li>
+        <li>About Me</li>
+        
+        
+      </ul>
     </div>
-    <RowsPhotoAlbum 
-      photos={photos}
-      spacing={10}
-      padding={10}
-      rowConstraints={{ singleRowMaxHeight: 350 }}
-      onClick={({ index }) => setIndex(index)} />
-    <Lightbox
-        slides={[
-          { src: "/1.jpeg"},
-          { src: "/2.jpeg"},
-          { src: "/3.jpeg"},
-          { src: "/4.jpeg"},
-          { src: "/5.jpeg"},
-          { src: "/6.jpeg"},
-          { src: "/7.jpeg"},
-          { src: "/8.jpeg"},
-          { src: "/9.jpeg"},
-          { src: "/10.jpeg"},
-          { src: "/11.jpeg"},
-          { src: "/12.jpeg"},
-        ]}
-        open={index >= 0}
-        index={index}
-        close={() => setIndex(-1)}
-        plugins={[Fullscreen, Zoom, Share]}
+    
+    <div className='content'>
+      <RowsPhotoAlbum 
+        photos={photos}
+        spacing={15}
+        rowConstraints={{ singleRowMaxHeight: 350 }}
+        onClick={({ index }) => setIndex(index)}
       />
+      <Lightbox
+          slides={[
+            { src: "/1.jpeg"},
+            { src: "/2.jpeg"},
+            { src: "/3.jpeg"},
+            { src: "/4.jpeg"},
+            { src: "/5.jpeg"},
+            { src: "/6.jpeg"},
+            { src: "/7.jpeg"},
+            { src: "/8.jpeg"},
+            { src: "/9.jpeg"},
+            { src: "/10.jpeg"},
+            { src: "/11.jpeg"},
+            { src: "/12.jpeg"},
+          ]}
+          open={index >= 0}
+          index={index}
+          close={() => setIndex(-1)}
+          plugins={[Fullscreen, Zoom, Share]}
+      />
+    </div>
     </>
   )
 }

@@ -55,20 +55,43 @@ h1 {
 
 .nav-bar {
   position: relative;
+  margin-left: 1rem;
   color: #dadada;
-  margin: 2rem;
   height: 20vh;
-  width: 100vw;
-  justify-items: left;
+  width: 98vw;
 }
 
 
 .nav-bar h1 {
-  font-size: 4em;
+  font-size: 2.5em;
+  justify-content: left;
   font-family: 'Permanent Marker', cursive;
+  margin-block: 0.2em;
+  max-width: 50vw;
 }
 
-.nav-bar h2 {
+.nav-bar ul {
+  list-style: none;
   font-size: 2em;
   font-family: 'Permanent Marker', cursive;
+  display: flex;
+  justify-content: center;
+}
+.nav-bar ul li {
+  display: inline;
+  margin-inline: 1rem;
+}
+.nav-bar h3 {
+  font-size: 1.5em;
+  font-family: 'Permanent Marker', cursive;
+  display: flex;
+}
+
+.content {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.content img{
+  border-radius: 10px;
 }
