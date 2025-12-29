@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { RowsPhotoAlbum } from 'react-photo-album';
 import "react-photo-album/rows.css"
+import Lightbox  from 'yet-another-react-lightbox';
+import 'yet-another-react-lightbox/styles.css';
 import './index.css'
 import Particles from './Particles';
 
@@ -22,10 +24,11 @@ function ParticlesShowcase() {
 }
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const [index, setIndex] = useState(-1);
   const photos = [
-  { src: "public/test1.jpg", width: 800, height: 600 },
-  { src: "public/test2.jpg", width: 1000, height: 1333 },
+  { src: "/test1.jpg", width: 800, height: 600 },
+  { src: "/test2.jpg", width: 1000, height: 1333 },
 ];
   
 
@@ -40,8 +43,22 @@ function App() {
     photos={photos}
     spacing={10}
     padding={10}
-    rowConstraints={{ singleRowMaxHeight: 350 }} />;
+    rowConstraints={{ singleRowMaxHeight: 350 }}
+    onClick={({ index }) => setIndex(index)} />
+    <Lightbox
+        slides={[
+  { src: "/test1.jpg"},
+  { src: "/test2.jpg"},
+]}
+        open={index >= 0}
+        index={index}
+        close={() => setIndex(-1)}
+      />
     </>
+    
+
+
+
   )
 }
 
