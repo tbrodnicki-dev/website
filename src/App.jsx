@@ -43,18 +43,6 @@ function App() {
     { src: "/12.jpeg", width: 1280, height: 853 },   
   ];
 
-  const menuItems = [
-    { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
-    { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
-    { label: 'Services', ariaLabel: 'View our services', link: '/services' },
-    { label: 'Contact', ariaLabel: 'Get in touch', link: '/contact' }
-  ];
-
-const socialItems = [
-  { label: 'Twitter', link: 'https://twitter.com' },
-  { label: 'GitHub', link: 'https://github.com' },
-  { label: 'LinkedIn', link: 'https://linkedin.com' }
-];
 
 
 
@@ -91,7 +79,6 @@ const socialItems = [
       <h1>Tyler Brodnicki</h1>
       <h2>Photographer</h2>
       <h3>Gallery</h3>
-      {/*<h2>"Life is like a camera. Focus on what's important, capture the good times, develop from the negatives, and if things don't work out, take another shot."</h2>*/}
     </div>
     <div className='content'>
       <RowsPhotoAlbum 
@@ -121,6 +108,7 @@ const socialItems = [
           plugins={[Fullscreen, Zoom, Share]}
       />
     </div>
+    
     <div className="footer">
       <p>© 2026 Tyler Brodnicki. All rights reserved.</p>
     </div>
