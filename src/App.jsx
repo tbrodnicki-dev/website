@@ -4,7 +4,8 @@ import "react-photo-album/rows.css"
 import Lightbox  from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 import './index.css'
-import Particles from './Particles';
+import ColorBends from './ColorBends';
+
 
 
 import { Counter, Fullscreen, Inline, Share, Zoom } from 'yet-another-react-lightbox/plugins';
@@ -63,7 +64,16 @@ const socialItems = [
 
   return (
     <>
-    <ParticlesShowcase />
+    <ColorBends
+      rotation={0}
+      speed={.2}
+      scale={.9}
+      frequency={1}
+      warpStrength={1}
+      mouseInfluence={1}
+      parallax={0}
+      transparent = {false}
+    />
     <div className="nav-bar">
       <ul>
         <li>
@@ -80,6 +90,7 @@ const socialItems = [
     <div className="title-bar">
       <h1>Tyler Brodnicki</h1>
       <h2>Photographer</h2>
+      <h3>Gallery</h3>
       {/*<h2>"Life is like a camera. Focus on what's important, capture the good times, develop from the negatives, and if things don't work out, take another shot."</h2>*/}
     </div>
     <div className='content'>
@@ -87,9 +98,9 @@ const socialItems = [
         photos={photos}
         spacing={15}
         rowConstraints={{ singleRowMaxHeight: 350 }}
-        /*onClick={({ index }) => setIndex(index)}*/
+        onClick={({ index }) => setIndex(index)}
       />
-      {/*<Lightbox
+      <Lightbox
           slides={[
             { src: "/1.jpeg"},
             { src: "/2.jpeg"},
@@ -108,7 +119,10 @@ const socialItems = [
           index={index}
           close={() => setIndex(-1)}
           plugins={[Fullscreen, Zoom, Share]}
-      />*/}
+      />
+    </div>
+    <div className="footer">
+      <p>© 2026 Tyler Brodnicki. All rights reserved.</p>
     </div>
     </>
   )
