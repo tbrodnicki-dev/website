@@ -21,6 +21,8 @@ a {
 }
 a:hover {
   color: #cabdbd;
+  text-decoration: underline;
+
 }
 
 body,html {
@@ -34,7 +36,6 @@ body,html {
 h1 {
   font-size: 2em;
   line-height: 1.1;
-  font-weight: 00;
 }
 
 
@@ -64,30 +65,25 @@ body {
   height: 5vh;
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: flex-end;
+  padding-block: 2.5rem;
   padding-inline: 2rem;
-  padding: 2rem;
   z-index: 1000;
   pointer-events: auto;
 }
 
-.nav-bar ul{
+.nav-bar ul {
   list-style-type: none;
-  margin: 0; 
+  margin: 0;
   padding: 0;
   overflow: hidden;
   font-size: 1.5em;
 }
 
-.nav-bar li{
+.nav-bar li {
   float: left;
   padding: 2rem;
 }
-
-.nav-bar li:hover a{
-  text-decoration: underline;
-}
-
 
 .title-bar {
   display: flex;
@@ -97,17 +93,19 @@ body {
   height: 100vh;
   position: relative;
   color: #cabdbd;
-  width: 98vw;
+  width: 100vw;
+  /*This negates horizontal-scrol */
+  max-width: 100%;
 }
 
 
 .title-bar h1 {
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
   font-size: 6em;
 }
 
 .title-bar h2 {
-  margin-top: .25em;
+  margin-top: 0.25em;
   font-size: 3em;
 }
 
@@ -115,7 +113,6 @@ body {
   position: absolute;
   bottom: 2rem;
   font-size: 3em;
-  animation: bounce 2s infinite;
 }
 
 .content {
@@ -123,7 +120,7 @@ body {
   margin-right: 1rem;
 }
 
-.content img{ 
+.content img {
   border-radius: 10px;
 }
 
@@ -136,11 +133,48 @@ body {
   color: #cabdbd;
 }
 
-.nav-bar li a{
+.nav-bar li a {
   text-decoration: none;
 }
 
-.nav-bar li:hover a{
+.nav-bar li:hover a {
   text-decoration: underline;
 }
 
+.contact-links{
+  position: absolute;
+  bottom: 2rem;
+  flex-direction: row;
+  justify-content: center;
+  padding-block: 2rem;
+  gap: 2rem;
+  font-size: 2em;
+}
+
+.contact-links a{
+  padding-inline: 1rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
+}
+.about-content p{
+  max-width: 800px;
+  margin-bottom: 1.5rem;
+  font-size: 1.5em;
+  line-height: 1.6;
+}
+
+.about-content li{
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.about-content img{
+  border-radius: 10px;
+  max-width: 600px;
+  aspect-ratio:  1 / 1.5;
+}
