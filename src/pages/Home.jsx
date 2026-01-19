@@ -37,12 +37,14 @@ function Home() {
           photos={photos}
           spacing={15}
           rowConstraints={{ singleRowMaxHeight: 350 }}
+          onClick={({ index: current }) => setIndex(current)}
         />
-
         <Lightbox
-          slides={photos.map(p => ({ src: p.src }))}
-          open={false}
-          plugins={[Fullscreen, Zoom, Share]}
+          slides={photos}
+          index={index}
+          open={index >= 0}
+          close={() => setIndex(-1)}
+          plugins={[Fullscreen, Share]}
         />
       </div>
 
