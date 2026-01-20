@@ -20,6 +20,18 @@ function Home() {
     { src: "https://github.com/tbrodnicki-dev/website/blob/main/public/10.jpeg?raw=true", width: 853, height: 1280 },
     { src: "https://github.com/tbrodnicki-dev/website/blob/main/public/11.jpeg?raw=true", width: 853, height: 1280 },
     { src: "https://github.com/tbrodnicki-dev/website/blob/main/public/12.jpeg?raw=true", width: 1280, height: 853 },
+    { src: "https://github.com/tbrodnicki-dev/website/blob/main/public/13.jpeg?raw=true", width: 853, height: 1280 },
+    { src: "https://github.com/tbrodnicki-dev/website/blob/main/public/14.jpeg?raw=true", width: 853, height: 1280 },
+    { src: "https://github.com/tbrodnicki-dev/website/blob/main/public/15.jpeg?raw=true", width: 853, height: 1280 },
+    { src: "https://github.com/tbrodnicki-dev/website/blob/main/public/16.jpeg?raw=true", width: 853, height: 1280 },
+    { src: "https://github.com/tbrodnicki-dev/website/blob/main/public/17.jpeg?raw=true", width: 853, height: 1280 },
+    { src: "https://github.com/tbrodnicki-dev/website/blob/main/public/18.jpeg?raw=true", width: 853, height: 1280 },
+    { src: "https://github.com/tbrodnicki-dev/website/blob/main/public/19.jpeg?raw=true", width: 853, height: 1280 },
+    { src: "https://github.com/tbrodnicki-dev/website/blob/main/public/20.jpeg?raw=true", width: 853, height: 1280 },
+    { src: "https://github.com/tbrodnicki-dev/website/blob/main/public/21.jpeg?raw=true", width: 853, height: 1280 },
+    { src: "https://github.com/tbrodnicki-dev/website/blob/main/public/22.jpeg?raw=true", width: 853, height: 1280 },
+    { src: "https://github.com/tbrodnicki-dev/website/blob/main/public/23.jpeg?raw=true", width: 853, height: 1280 },
+    { src: "https://github.com/tbrodnicki-dev/website/blob/main/public/24.jpeg?raw=true", width: 853, height: 1280 },
   ]
 
   return (
