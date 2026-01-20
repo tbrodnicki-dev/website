@@ -8,8 +8,11 @@ import ColorBends from './components/ColorBends'
 function App() {
   return (
     <>
-    <ColorBends 
-    />
+      <ColorBends 
+      rotation={66}
+      scale={4.2}
+      
+      />
       <div className="nav-bar">
         <ul>
           <li>
